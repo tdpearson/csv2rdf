@@ -1,0 +1,32 @@
+namespaces:
+  - name: viaf
+    uri: https://viaf.org/
+  - name: dll
+    uri: https://catalog.digitallatin.org/
+  - name: madsrdf
+    uri: http://www.loc.gov/mads/rdf/v1#
+  - name: foaf
+    uri: http://xmlns.com/foaf/0.1/
+  - name: rdf
+    uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  - name: rdfs
+    uri: http://www.w3.org/2000/01/rdf-schema#
+
+mappings:
+  author-authorities-export:
+    uriref: 'DLL Page Link'
+    foaf.name:
+      - 'Authorized Name'
+      - 'Author Name Native Language'
+      - 'Author Name Latin'
+      - 'Author Name English'
+      - 'Other Alternative Name Form(s)'
+    dll.id: 'DLL Identifier'
+  dll-works-export:
+    uriref: 'DLL Page Link'
+  dll-works-sorted-by-author-with-dll-number:
+    uriref: 'DLL Page Link'
+  item-records-export:
+    uriref: 'DLL Page Link'
+  web-pages-export:
+    uriref: 'DLL Page Link'
