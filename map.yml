@@ -11,21 +11,55 @@ namespaces:
     uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   - name: rdfs
     uri: http://www.w3.org/2000/01/rdf-schema#
+  - name: dcterms
+    uri: http://purl.org/dc/terms/
 
 mappings:
   author-authorities-export:
     uriref: 'DLL Page Link'
-    foaf.name:
-      - 'Authorized Name'
-      - 'Author Name Native Language'
-      - 'Author Name Latin'
-      - 'Author Name English'
-      - 'Other Alternative Name Form(s)'
+# Names
+    dll.AuthorizedName: 'Authorized Name'
+    dll.LatinName: 'Author Name Latin'
+    dll.AlternativeName: 'Other Alternative Name Form(s)'
+    madsrdf.hasAbbreviationVariant: 'Author Name Abbreviations'
+# TODO: Need to identify what to do about field 'Related to other DLL Author(s)'
+# Identifiers
     dll.id: 'DLL Identifier'
+    dll.VIAF: 'VIAF Source'
+    # dll.LOC: 'LoC Source'
+    dll.LCCN: 'LofC URI'
+    dll.ISNI: 'ISNI URL'
+    dll.Wikidata: 'Wikidata URL'
+    dll.Wikipedia: 'Wikipedia'
+    dll.Worldcat: 'WorldCat Identity'
+# URNs
+    dll.hasCTS_URN: 'CTS URN'
+    dll.hasPHI_URN: 'PHI Number'
+    dll.hasSTOA_URN: 'Stoa Number'
+    dll.hasDLL_URN: 'DLL Identifier'
+    dll.hasLOC_URN: 'LoC ID'
+    dll.hasVIAF_URN: 'VIAF ID'
+# Biographical details.
+    madsrdf.birthDate: 'Author Birth Date'
+    madsrdf.deathDate: 'Author Death Date'
+    madsrdf.temporal: 'Floruit/Active'
+    dcterms.coverage: 'Time Period'
   dll-works-export:
     uriref: 'DLL Page Link'
-  dll-works-sorted-by-author-with-dll-number:
-    uriref: 'DLL Page Link'
+    dll.AuthorizedTitle: 'Work Name'
+    dll.AlternativeTitle: 'Alternative Title'
+# TODO Need to identify what to do about 'Work Authority' field.
+    dll.AbbreviatedTitle: 'Work Abbreviated'
+    dll.hasPart: 'Has Part'
+    dll.isPartOf: 'Part Of'
+    dll.references: 'References'
+    dll.hasCreator: 'Creator'
+    dll.attributedTo: 'Attributed to'
+    dll.dubiousAttribution: 'Dubious/Spurious Attribution'
+    dll.hasCTS_URN: 'CTS URN'
+    dll.hasDLL_URN: 'DLL Identifier'
+    dll.hasPHI_URN: 'PHI Number'
+    dll.hasSTOA_URN: 'Stoa Number'
   item-records-export:
     uriref: 'DLL Page Link'
   web-pages-export:
