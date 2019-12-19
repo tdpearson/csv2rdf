@@ -22,6 +22,10 @@ mappings:
       - 'Author Name English'
       - 'Other Alternative Name Form(s)'
     dll.id: 'DLL Identifier'
+    dll.authorizedName: 'Authorized Name'
+    dll.nativeLanguageName: 'Author Name Native Language'
+    dll.latinName: 'Author Name Latin'
+    dll.englishName: 'Author Name English'
   dll-works-export:
     uriref: 'DLL Page Link'
   dll-works-sorted-by-author-with-dll-number:
