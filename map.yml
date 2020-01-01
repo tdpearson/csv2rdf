@@ -19,7 +19,11 @@ mappings:
     uriref: 'DLL Page Link'
 # Names
     dll.AuthorizedName: 'Authorized Name'
-    dll.LatinName: 'Author Name Latin'
+    dll.LatinName: 
+      multival:
+        type: literal
+        delimiter: ";"
+        field: 'Author Name Latin'
     dll.AlternativeName: 'Other Alternative Name Form(s)'
     madsrdf.hasAbbreviationVariant: 'Author Name Abbreviations'
 # TODO: Need to identify what to do about field 'Related to other DLL Author(s)'
@@ -34,6 +38,7 @@ mappings:
       uriref: 'ISNI URL'
     dll.Wikidata: 
       uriref: 'Wikidata URL'
+    # FIXME: not all of the Wikipedia entries in the csv file are valid uris
     dll.Wikipedia: 'Wikipedia'
     dll.Worldcat: 
       uriref: 'WorldCat Identity'
