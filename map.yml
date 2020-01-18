@@ -22,7 +22,7 @@ mappings:
     dll.LatinName: 
       multival:
         type: literal
-        delimiter: ";"
+        delimiter: ","
         field: 'Author Name Latin'
     dll.AlternativeName: 'Other Alternative Name Form(s)'
     madsrdf.hasAbbreviationVariant: 'Author Name Abbreviations'
